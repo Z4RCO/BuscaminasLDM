@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/icono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono" />
+
+    <TextView
+        android:id="@+id/userActivityUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/user"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/userAvtivityEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userAvtivityEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/facil"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/userACtivityMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/useractivityHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/dificil"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userACtivityMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/medio"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/useractivityHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/atras"
+        android:onClick="volver"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#000000" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="80dp"
+        android:onClick="cerrarSesion"
+        android:text="@string/cerrarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

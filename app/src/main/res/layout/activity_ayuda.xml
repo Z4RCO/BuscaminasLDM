@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AyudaActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.practica4.fragment.FragmentAyuda1"
+        android:layout_width="324dp"
+        android:layout_height="535dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FF0000"
+        android:contentDescription="@string/atras"
+        android:onClick="menu"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#000000" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="#00000000"
+        android:contentDescription="@string/siguiente"
+        android:onClick="next"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
+        app:srcCompat="@android:drawable/ic_media_play"
+        app:tint="#000000" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/anterior"
+        android:onClick="previous"
+        android:rotationY="-180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
+        app:srcCompat="@android:drawable/ic_media_play"
+        app:tint="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayuda"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

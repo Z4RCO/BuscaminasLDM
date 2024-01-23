@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:backgroundTint="#A6FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/icono"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:backgroundTint="#C2C2C2"
+        android:contentDescription="@string/jugar"
+        android:onClick="login"
+        android:text="@string/iniciarSesion"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#00000000"
+        android:contentDescription="@string/ayuda"
+        android:onClick="ayuda"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ayuda" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:onClick="registro"
+        android:text="@string/registrarBoton"
+        android:textColor="#000000"
+        app:backgroundTint="#C2C2C2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:layout_marginBottom="100dp"
+        android:onClick="registrar"
+        android:text="@string/registrar"
+        android:textColor="#000000"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userRegistrar"
+        android:layout_width="280sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/passRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passRegistrar"
+        android:layout_width="280sp"
+        android:layout_height="50sp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/repPassRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/repPassRegistrar"
+        android:layout_width="280sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rep_pass"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/registrarTexto"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/userRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:contentDescription="@string/icono"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:contentDescription="@string/atras"
+        android:onClick="menu"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

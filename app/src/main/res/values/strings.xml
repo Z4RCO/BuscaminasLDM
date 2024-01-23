@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Buscaminas</string>
+    <string name="jugar">Jugar!</string>
+    <string name="icono">icono de la app</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="rep_pass">Repetir contraseña</string>
+
+    <string name="registrar">Registrar</string>
+    <string name="registrarBoton">Registrate aquí</string>
+    <string name="registrarTexto">Registrar nuevo usuario</string>
+
+    <string name="atras">atrás</string>
+    <string name="siguiente">siguiente</string>
+    <string name="anterior">anterior</string>
+
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="dificultad">Selecciona dificultad</string>
+
+    <string name="facil">Fácil</string>
+    <string name="medio">Medio</string>
+    <string name="dificil">Difícil</string>
+
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="cerrarSesion">Cerrar sesión</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="casillaOculta">Casilla oculta</string>
+    <string name="casillaBandera">Casilla con bandera</string>
+    <string name="casillaVacia">Casilla vacía</string>
+    <string name="casillaNumero">Casilla con número</string>
+
+    <string name="ocultaDesc">Todavía no la has descubierto</string>
+    <string name="banderaDesc">Pones una bandera\ndonde piensas que hay mina</string>
+    <string name="numeroDesc">Si no hay mina\nel número indica la cantidad\n de minas en las 8 adyacentes</string>
+    <string name="vaciaDesc">Si no hay número\n no hay minas alrededor</string>
+
+
+</resources>
